@@ -30,14 +30,18 @@ class EditViewController: UIViewController,UIGestureRecognizerDelegate {
     
     
     @IBAction func EditButtonAction(_ sender: UIButton) {
+ 
       }
     
     
+    
+    
+    
     private func setupUI(){
-        nameTextField.placeholderColor = UIColor.white
-        surnameTextField.placeholderColor = UIColor.white
-        emailTextField.placeholderColor = UIColor.white
-        phoneNumberTextField.placeholderColor = UIColor.white
+        nameTextField.placeholderColor = UIColor.black
+        surnameTextField.placeholderColor = UIColor.black
+        emailTextField.placeholderColor = UIColor.black
+        phoneNumberTextField.placeholderColor = UIColor.black
         
         subView.roundElementEdges()
         subView.setShadow()

@@ -374,6 +374,7 @@
 				DEVELOPMENT_TEAM = W2HCKKQTYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ContactList-HW20/Application/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Contacts list";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -402,6 +403,7 @@
 				DEVELOPMENT_TEAM = W2HCKKQTYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ContactList-HW20/Application/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Contacts list";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -10,8 +10,7 @@ import UIKit
 class PersonInfoViewController: UIViewController {
 
     @IBOutlet weak var infoView: UIView!
-    @IBOutlet weak var emailSubView: UIView!
-    @IBOutlet weak var phoneSubView: UIView!
+    @IBOutlet weak var subView: UIView!
     
     
     @IBOutlet weak var emailInfoLabel: UILabel!
@@ -38,11 +37,11 @@ class PersonInfoViewController: UIViewController {
     
     
     private func setupUI() {
-           emailSubView.roundElementByHeight()
-           emailSubView.setShadow()
+          // emailSubView.roundElementByHeight()
+          // emailSubView.setShadow()
            
-           phoneSubView.roundElementByHeight()
-           phoneSubView.setShadow()
+           subView.roundElementEdges()
+           subView.setShadow()
            
            infoView.layer.maskedCorners = [.layerMinXMaxYCorner]
            infoView.roundElementEdges()
@@ -52,7 +51,7 @@ class PersonInfoViewController: UIViewController {
            phoneInfoLabel.text = phoneNumberLabelText
         
            updateInfoButton.roundElementByHeight()
-        updateInfoButton.setShadow()
+           updateInfoButton.setShadow()
        }
     
    
