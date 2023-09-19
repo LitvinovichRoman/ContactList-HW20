@@ -78,7 +78,7 @@
         <scene sceneID="8yX-rG-VS7">
             <objects>
                 <tabBarController title="Person" id="rrx-hh-q15" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Person list" id="Wkz-YQ-gYp"/>
+                    <navigationItem key="navigationItem" title="Person list" leftItemsSupplementBackButton="YES" id="Wkz-YQ-gYp"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lpB-jJ-6Jr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -86,12 +86,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="WII-jB-xSi" kind="relationship" relationship="viewControllers" id="gRw-eU-Gdw"/>
-                        <segue destination="lNH-5v-I5i" kind="relationship" relationship="viewControllers" id="ENA-IG-gBb"/>
+                        <segue destination="sfh-Zq-ok7" kind="relationship" relationship="viewControllers" id="mD9-jb-8QG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-eH-JFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-589" y="-178"/>
+            <point key="canvasLocation" x="-799" y="-178"/>
         </scene>
         <!--Section Table View Controller-->
         <scene sceneID="LvI-3P-pXj">
@@ -103,7 +103,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HeaderCell" id="1le-KS-hAB" customClass="HeaderCell" customModule="ContactList_HW20" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="38" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1le-KS-hAB" id="HXs-hD-aDv">
                                     <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
@@ -126,7 +126,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="3Ri-c7-XWb">
-                                <rect key="frame" x="0.0" y="99" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="81.666667938232422" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ri-c7-XWb" id="aVH-P7-Es6">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -139,11 +139,12 @@
                             <outlet property="delegate" destination="sfh-Zq-ok7" id="7Tl-pi-zbh"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="person.text.rectangle" catalog="system" id="DzO-cl-bF5"/>
                     <navigationItem key="navigationItem" id="pjv-05-vhl"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rna-kr-zTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115.2671755725191" y="19.718309859154932"/>
+            <point key="canvasLocation" x="189" y="175"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="ct9-Xk-fV5">
@@ -242,19 +243,9 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPh-8F-8YU">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="248"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update person data" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at9-Yl-OsG">
-                                        <rect key="frame" x="30.000000000000014" y="130" width="228.33333333333337" height="42.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="31"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="248" id="0LO-9w-iJ9"/>
-                                    <constraint firstItem="at9-Yl-OsG" firstAttribute="leading" secondItem="jPh-8F-8YU" secondAttribute="leading" constant="30" id="ev3-mM-PL1"/>
-                                    <constraint firstItem="at9-Yl-OsG" firstAttribute="top" secondItem="jPh-8F-8YU" secondAttribute="top" constant="130" id="hdE-ev-tGC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -277,7 +268,6 @@
                     <connections>
                         <outlet property="editButton" destination="8DT-ok-0te" id="hos-Yw-keM"/>
                         <outlet property="emailTextField" destination="8Le-ql-Ez6" id="rdg-I5-EmV"/>
-                        <outlet property="infoLabel" destination="at9-Yl-OsG" id="IfE-X2-PCz"/>
                         <outlet property="nameTextField" destination="GSh-Re-Dg0" id="rAk-ny-vg0"/>
                         <outlet property="phoneNumberTextField" destination="qYB-4c-DNm" id="yXY-Cb-bSO"/>
                         <outlet property="subView" destination="jPh-8F-8YU" id="OmX-OV-P4j"/>
@@ -286,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6br-Qi-6Tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2910.6870229007632" y="19.718309859154932"/>
+            <point key="canvasLocation" x="2923" y="-682"/>
         </scene>
         <!--Person Info View Controller-->
         <scene sceneID="TFH-Ck-uhr">
@@ -298,20 +288,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMn-uI-UMK">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="248"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsK-AM-8T9">
-                                        <rect key="frame" x="30" y="130" width="131.66666666666666" height="42.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="31"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="tsK-AM-8T9" firstAttribute="leading" secondItem="lMn-uI-UMK" secondAttribute="leading" constant="30" id="3Us-Ke-s2R"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tsK-AM-8T9" secondAttribute="trailing" constant="20" symbolic="YES" id="dEo-Zh-Xa2"/>
                                     <constraint firstAttribute="height" constant="248" id="gUR-jg-drd"/>
-                                    <constraint firstItem="tsK-AM-8T9" firstAttribute="top" secondItem="lMn-uI-UMK" secondAttribute="top" constant="130" id="o1C-lN-pRP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-Eg-8Ph" userLabel="Sub View">
@@ -426,25 +405,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1Q-s0-k8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="190" y="-682"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bjG-qX-YeX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lNH-5v-I5i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person.text.rectangle" catalog="system" id="iOK-HT-KJM"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q4D-IK-3MS">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="sfh-Zq-ok7" kind="relationship" relationship="rootViewController" id="RvK-Az-xIs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zy5-ro-YYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="188.54961832061068" y="19.718309859154932"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="labelColor"/>
