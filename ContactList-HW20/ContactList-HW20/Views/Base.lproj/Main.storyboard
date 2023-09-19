@@ -52,12 +52,11 @@
                             <outlet property="delegate" destination="VaF-8N-ZDh" id="tRc-vR-F1c"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="person.crop.rectangle" catalog="system" id="vYU-ED-wQg"/>
                     <navigationItem key="navigationItem" id="3gX-ZC-CB1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1I-fe-HWE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647" y="-491"/>
+            <point key="canvasLocation" x="1056" y="-682"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o1U-wH-aO6">
@@ -86,8 +85,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="VaF-8N-ZDh" kind="relationship" relationship="viewControllers" id="gRw-eU-Gdw"/>
-                        <segue destination="sfh-Zq-ok7" kind="relationship" relationship="viewControllers" id="ENA-IG-gBb"/>
+                        <segue destination="WII-jB-xSi" kind="relationship" relationship="viewControllers" id="gRw-eU-Gdw"/>
+                        <segue destination="lNH-5v-I5i" kind="relationship" relationship="viewControllers" id="ENA-IG-gBb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-eH-JFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -104,7 +103,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HeaderCell" id="1le-KS-hAB" customClass="HeaderCell" customModule="ContactList_HW20" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="38" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1le-KS-hAB" id="HXs-hD-aDv">
                                     <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
@@ -127,7 +126,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="3Ri-c7-XWb">
-                                <rect key="frame" x="0.0" y="81.666667938232422" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="99" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ri-c7-XWb" id="aVH-P7-Es6">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -140,12 +139,11 @@
                             <outlet property="delegate" destination="sfh-Zq-ok7" id="7Tl-pi-zbh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="person.text.rectangle" catalog="system" id="iOK-HT-KJM"/>
                     <navigationItem key="navigationItem" id="pjv-05-vhl"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rna-kr-zTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647" y="194"/>
+            <point key="canvasLocation" x="1115.2671755725191" y="19.718309859154932"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="ct9-Xk-fV5">
@@ -288,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6br-Qi-6Tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="-825"/>
+            <point key="canvasLocation" x="2910.6870229007632" y="19.718309859154932"/>
         </scene>
         <!--Person Info View Controller-->
         <scene sceneID="TFH-Ck-uhr">
@@ -317,7 +315,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-Eg-8Ph" userLabel="Sub View">
-                                <rect key="frame" x="22.666666666666657" y="390" width="345.33333333333337" height="132.66666666666663"/>
+                                <rect key="frame" x="22.666666666666657" y="338" width="345.33333333333337" height="132.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="gJx-Oi-Shj">
                                         <rect key="frame" x="20" y="20.000000000000007" width="305.33333333333331" height="92.666666666666686"/>
@@ -386,20 +384,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U4u-7O-Bb6">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="cIV-fe-U11">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gXa-kA-mTW">
-                                <rect key="frame" x="140.33333333333334" y="587.66666666666663" width="112.66666666666666" height="44"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="K4E-5z-VKd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="G3T-cy-K0a">
+                                <rect key="frame" x="264.33333333333331" y="5" width="112.66666666666669" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="BoB-zm-Rmp"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Update info">
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Update info"/>
                                 <connections>
-                                    <action selector="updateInfoButtonAction:" destination="0L0-3u-IB2" eventType="touchUpInside" id="Cj6-nd-coQ"/>
-                                    <segue destination="a53-Zq-t1f" kind="show" id="gb0-UQ-bNX"/>
+                                    <segue destination="a53-Zq-t1f" kind="show" id="nap-xi-NaQ"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -409,12 +401,50 @@
                         <outlet property="infoView" destination="lMn-uI-UMK" id="AFl-Qq-e0b"/>
                         <outlet property="phoneInfoLabel" destination="vHG-6w-kcH" id="xja-V2-NeX"/>
                         <outlet property="subView" destination="g7p-Eg-8Ph" id="we2-hp-xoh"/>
-                        <outlet property="updateInfoButton" destination="gXa-kA-mTW" id="3ZC-ai-64U"/>
+                        <outlet property="updateInfoButton" destination="G3T-cy-K0a" id="2wh-8B-Men"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wW-Gy-yys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583.9694656488548" y="-681.69014084507046"/>
+            <point key="canvasLocation" x="1987" y="-682"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bLF-wZ-sw4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WII-jB-xSi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="person.crop.rectangle" catalog="system" id="vYU-ED-wQg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TeM-Ri-lVo">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VaF-8N-ZDh" kind="relationship" relationship="rootViewController" id="XZT-p6-UYO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1Q-s0-k8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="-682"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bjG-qX-YeX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lNH-5v-I5i" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="person.text.rectangle" catalog="system" id="iOK-HT-KJM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q4D-IK-3MS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sfh-Zq-ok7" kind="relationship" relationship="rootViewController" id="RvK-Az-xIs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zy5-ro-YYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188.54961832061068" y="19.718309859154932"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="labelColor"/>

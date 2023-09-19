@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     let person = Person.self
-    let persons = PersonData.createPersons().sorted { a, b -> Bool in
+    var persons = PersonData.createPersons().sorted { a, b -> Bool in
         a.sureName < b.sureName
     }
     
@@ -17,7 +17,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        self.navigationItem.rightBarButtonItem = editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
         
     // MARK: - Table view data source
@@ -34,6 +34,21 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            persons.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .none)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool { true }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let currentTrack = persons.remove(at: fromIndexPath.row)
+        persons.insert(currentTrack, at: to.row)
+    }
+    
+    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -44,6 +59,8 @@ class TableViewController: UITableViewController {
             destinationController.phoneNumberLabelText = person.phoneNumber
         }
     }
+    
+    
     
     
 }

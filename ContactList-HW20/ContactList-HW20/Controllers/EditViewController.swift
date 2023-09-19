@@ -8,6 +8,7 @@
 import UIKit
 
 class EditViewController: UIViewController,UIGestureRecognizerDelegate {
+    
     // MARK: -  Views
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var infoLabel: UILabel!
@@ -30,12 +31,9 @@ class EditViewController: UIViewController,UIGestureRecognizerDelegate {
     
     
     @IBAction func EditButtonAction(_ sender: UIButton) {
+        
  
       }
-    
-    
-    
-    
     
     private func setupUI(){
         nameTextField.placeholderColor = UIColor.black

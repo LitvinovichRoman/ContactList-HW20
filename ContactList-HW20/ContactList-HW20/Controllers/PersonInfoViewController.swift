@@ -31,14 +31,9 @@ class PersonInfoViewController: UIViewController {
     @IBAction func updateInfoButtonAction(_ sender: UIButton) {
     }
     
-    
-    
-    
-    
-    
+
     private func setupUI() {
-          // emailSubView.roundElementByHeight()
-          // emailSubView.setShadow()
+
            
            subView.roundElementEdges()
            subView.setShadow()

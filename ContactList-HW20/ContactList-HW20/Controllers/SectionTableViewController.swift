@@ -11,6 +11,10 @@ class SectionTableViewController: UITableViewController {
     
     let persons = PersonData.createPersons().sorted { a, b -> Bool in a.name < b.name }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.delegate = self
+    }
     
     
     // MARK: - Table view data source
